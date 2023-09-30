@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Botão de Saida
     generateCodeButton.addEventListener('click', function () {
-        const code = matrix.map(row => 'B' + row.map(pixel => pixel.dataset.state).join('')).join(',\n');
+        const code = matrix.map(row => 'B' + row.map(pixel => pixel.dataset.state).join('')).join(',\n') + ',';
         codeOutput.value = code;
 
         // Função Area de Transferencia
